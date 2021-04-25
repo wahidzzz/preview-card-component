@@ -1,0 +1,44 @@
+main {
+  background-color: var(--clr-primary-desach-blue);
+  height: 55vh;
+  width: 70vw;
+  display: flex;
+  flex: 0 1 50%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+.imageHolder,
+.contentHolder {
+  height: inherit;
+  /* width: 50%; */
+}
+.imageHolder {
+  position: relative;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.imageHolder::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--clr-primary-accent-violet);
+  opacity: 0.4;
+  background-blend-mode: difference;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.imageHolder img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.contentHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 2rem 1rem;
+  margin: auto 2rem;
+}

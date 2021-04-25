@@ -1,0 +1,31 @@
+.cardHeading {
+  color: var(--clr-neutral-white);
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+.cardContent {
+  color: var(--clr-neutral-main-para);
+}
+.colorHead {
+  color: var(--clr-primary-accent-violet);
+}
+.cardContent p,
+.cardHeading {
+  width: 30ch;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+.cardStats {
+  color: var(--clr-neutral-white);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.statCount {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+.statHead {
+  color: var(--clr-neutral-stats-head);
+}
